@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   ContainerForm,
   InputName,
@@ -10,38 +11,41 @@ import {
   ContainerButtons,
 } from "./style";
 
-export const Form = ({ getNewIP }) => {
+export const Form = ({ getNewIP, ip }) => {
   //estado que agrupa os valores dos inputs em um único Obejto
   const [form, setForm] = useState({
-    nome: "",
+    name: "",
     profession: "",
     cell: "",
-    ip: "",
   });
-
-  // função que realiza a chamda para a API e salva os dados do form em Localstorage, junto ao prevent Default para impedir a atualização do form
-  const enviarDados = (e) => {
-    e.preventDefault();
-    getNewIP();
-  };
 
   //unificando as funções para pegar os valores do Input e adionar no estado do form
   const onChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    //variavel NAME que recebe o parametro name do input o qual foi alterado
+    //variavel VALUE que recebe o parametro value do input que tambem foi alterado
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  // função que realiza a chamada para a API e salva os dados do form em Localstorage, junto ao prevent Default para impedir a atualização do form
+  const sendData = (e) => {
+    e.preventDefault();
+    getNewIP();
   };
 
   return (
     <div>
       {/* Container com todos dos inputs do form */}
       <ContainerForm>
-        <form onSubmit={enviarDados}>
+        <form onSubmit={sendData}>
           <InputName>
             <label>Nome:</label>
             <input
               type="text"
-              value={form.nome}
+              // required
+              value={form.name}
               onChange={onChange}
-              name="nome"
+              name="name"
             />
           </InputName>
           <ContainerContatoProfissao>
@@ -49,7 +53,8 @@ export const Form = ({ getNewIP }) => {
               <label>Profissão:</label>
               <input
                 type="text"
-                value={form.profissao}
+                // required
+                value={form.profession}
                 onChange={onChange}
                 name="profession"
               />
@@ -58,7 +63,8 @@ export const Form = ({ getNewIP }) => {
               <label>Celular:</label>
               <input
                 type="text"
-                value={form.celular}
+                // required
+                value={form.cell}
                 onChange={onChange}
                 name="cell"
               />
@@ -69,15 +75,15 @@ export const Form = ({ getNewIP }) => {
               <label>Meu IP:</label>
               <input
                 onChange={onChange}
-                value={form.ip}
-                type="number"
+                // required
+                value={ip}
+                type="text"
                 placeholder="Preenchimento Automático"
                 readOnly
-                name="ip"
               />
             </InputIP>
             <div>
-              <button onClick={enviarDados}>ENCONTRAR IP</button>
+              <button>ENCONTRAR IP</button>
             </div>
           </ContainerIp>
         </form>
