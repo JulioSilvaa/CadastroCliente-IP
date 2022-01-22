@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Cowala - Desafio IP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto **Cadastro-Cliente** foi desenvolvido durante o **Processo Seletivo**, com o intuito de realizar um form de cadastro de cliente, onde o mesmo tivesse o preenchimento automático do campo IP. Que utilizassemos o LocalStorage para persistir os dados.
 
-## Available Scripts
+### Desenvolvido por :
 
-In the project directory, you can run:
+Júlio Cesar da Silva.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Índice
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Descrição](#-descrição-do-projeto)
+- [Como acessar o projeto](#-como-acessar-o-projeto)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Instalação](#-como-baixar-o-projeto)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖋 Descrição do projeto
 
-### `npm run build`
+Projeto consiste em um formulário de cadastro onde após o preenchimento das informações, existe a possíbilidade de salvarmos os dados para que mesmo após a tela ser reiniciada esses dados não sejam perdidos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🖋 Imagens do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img align="center" src="./src/Assets/Captura de tela 2022-01-22 200137.png" alt="Foto da projeto"/>
+<img align="center" src="./src/Assets/Captura de tela 2022-01-22 200208.png" alt="Foto do projeto"/>
+<img align="center" src="./src/Assets/Captura de tela 2022-01-22 200141.png" alt="Foto do projeto"/>
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌎 Como acessar o projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Link Surge: LINK AQUI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Tecnologias utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+o projeto foi desenvolvido usando as seguintes tecnologias:
 
-## Learn More
+- [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Styled-Components](https://styled-components.com/docs)
+- [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
+- [React-Input-mask](https://www.npmjs.com/package/react-input-mask)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💾 Como baixar o projeto
 
-### Code Splitting
+- Primeiro instale o [Git](https://git-scm.com/), [Node.jS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# Clonar o repositório
+git clone https://github.com/juliosan-bit/CadastroCliente-IP
 
-### Analyzing the Bundle Size
+# Instalar as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Rodar o projeto
+npm run start
+```
