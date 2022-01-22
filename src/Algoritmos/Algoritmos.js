@@ -1,3 +1,6 @@
+
+
+// 1 -  fibonacci.js
 const fibonacci = (n) => {
   let fq = [0, 1];
   if (n <= 1) {
@@ -15,3 +18,6 @@ const fibonacci = (n) => {
 };
 
 console.log(fibonacci(6));
+
+
+

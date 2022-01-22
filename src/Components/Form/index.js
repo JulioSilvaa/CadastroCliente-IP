@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReactInputMask from "react-input-mask";
 
 import {
   ContainerForm,
@@ -17,6 +18,7 @@ export const Form = ({ getNewIP, ip }) => {
     name: "",
     profession: "",
     cell: "",
+    ip: "",
   });
 
   //unificando as funções para pegar os valores do Input e adionar no estado do form
@@ -43,6 +45,7 @@ export const Form = ({ getNewIP, ip }) => {
     const local = JSON.parse(localStorage.getItem("form"));
     if (local) {
       setForm(local);
+      getNewIP();
     }
   }, []);
 
@@ -60,7 +63,7 @@ export const Form = ({ getNewIP, ip }) => {
           <label>Nome:</label>
           <input
             type="text"
-            // required
+            required
             value={form.name}
             onChange={onChange}
             name="name"
@@ -71,20 +74,23 @@ export const Form = ({ getNewIP, ip }) => {
             <label>Profissão:</label>
             <input
               type="text"
-              // required
+              required
               value={form.profession}
               onChange={onChange}
               name="profession"
             />
           </InputProfissao>
           <InputContato>
-            <label>Celular:</label>
-            <input
-              type="text"
-              // required
+            <label>Contato:</label>
+            <ReactInputMask
+              name={"cell"}
+              type={"tel"}
+              label="Celular:"
+              mask="(99) 99999-9999"
+              title="Apenas Números"
               value={form.cell}
               onChange={onChange}
-              name="cell"
+              required
             />
           </InputContato>
         </ContainerContatoProfissao>
@@ -94,7 +100,7 @@ export const Form = ({ getNewIP, ip }) => {
             <input
               name="ip"
               onChange={onChange}
-              // required
+              required
               value={ip}
               type="text"
               placeholder="Preenchimento Automático"
