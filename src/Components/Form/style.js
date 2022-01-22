@@ -1,33 +1,21 @@
 import styled from "styled-components";
 
-
-
 export const ContainerForm = styled.div`
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1000px;
-  height: 460px;
-
+  max-width: 80%;
+  height: 400px;
+  padding: 10px;
+  margin: 0 auto;
   background: #ededed;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   form {
-    margin: 40px auto;
+    margin: 30px auto;
     max-width: 400px;
     height: 200px;
-  }
-`;
 
-export const InputNome = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  input {
-    max-width: 541px;
-    height: 24px;
+    input {
+      border: none;
+    }
   }
 `;
 
@@ -44,6 +32,7 @@ export const InputName = styled.div`
 export const ContainerContatoProfissao = styled.div`
   margin-top: 8px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   input {
@@ -71,6 +60,11 @@ export const ContainerIp = styled.div`
     margin-top: 20px;
     width: 120px;
     height: 25px;
+    background-color: #00d9d0;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 export const InputIP = styled.div`
@@ -81,12 +75,29 @@ export const InputIP = styled.div`
   input {
     width: 250px;
     height: 25px;
+    &:hover {
+      cursor: no-drop;
+    }
   }
 `;
 
 export const ContainerButtons = styled.div`
-  margin-top: 15px;
+  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+  margin: 60px auto;
+
+  button {
+    width: 100px;
+    height: 20px;
+    background-color: #0b1632;
+    color: #fff;
+    font-weight: 200;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;
