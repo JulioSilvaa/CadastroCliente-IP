@@ -1,1 +1,1 @@
-export const BaseURL = "https://ip-fast.com/api/ip/"
+export const BaseURL = "https://ip-fast.com/api/ip/";
