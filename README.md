@@ -27,7 +27,7 @@ Projeto consiste em um formulário de cadastro onde após o preenchimento das in
 
 <img align="center" src="./src/Assets/Captura de tela 2022-01-22 200137.png" alt="Foto da projeto"/>
 <img align="center" src="./src/Assets/Captura de tela 2022-01-22 200208.png" alt="Foto do projeto"/>
-<img align="center" src="./src/Assets/Captura de tela 2022-01-22 200141.png" alt="Foto do projeto"/>
+<img align="center" src="./src/Assets/Captura de tela 2022-01-22 200241.png" alt="Foto do projeto"/>
 
 ---
 
