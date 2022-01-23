@@ -34,7 +34,7 @@ Projeto consiste em um formulário de cadastro onde após o preenchimento das in
 ## 🌎 Como acessar o projeto
 
 
-### Link Surge: cowalaForm.surge.sh
+### Link Surge: https://cowalaform.surge.sh/
 
 
 
